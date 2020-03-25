@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6626945242AC2CF00F9755F /* main (1).m in Sources */ = {isa = PBXBuildFile; fileRef = F6626944242AC2CF00F9755F /* main (1).m */; };
 		F6626947242AC2D500F9755F /* DateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6626946242AC2D500F9755F /* DateCalculator.m */; };
 		F662694D242ACFDA00F9755F /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = F662694C242ACFDA00F9755F /* Box.m */; };
+		F662694F242B144000F9755F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F662694E242B144000F9755F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		F6626937242AAC6E00F9755F /* ObjectCLab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectCLab2; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6626944242AC2CF00F9755F /* main (1).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "main (1).m"; path = "../../../../Downloads/main (1).m"; sourceTree = "<group>"; };
 		F6626946242AC2D500F9755F /* DateCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateCalculator.m; path = ../../../../Downloads/DateCalculator.m; sourceTree = "<group>"; };
 		F6626948242AC2DE00F9755F /* DateCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DateCalculator.h; path = ../../../../Downloads/DateCalculator.h; sourceTree = "<group>"; };
 		F662694B242ACFDA00F9755F /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
 		F662694C242ACFDA00F9755F /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		F662694E242B144000F9755F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +63,9 @@
 		F6626939242AAC6E00F9755F /* ObjectCLab2 */ = {
 			isa = PBXGroup;
 			children = (
+				F662694E242B144000F9755F /* main.m */,
 				F6626948242AC2DE00F9755F /* DateCalculator.h */,
 				F6626946242AC2D500F9755F /* DateCalculator.m */,
-				F6626944242AC2CF00F9755F /* main (1).m */,
 				F662694B242ACFDA00F9755F /* Box.h */,
 				F662694C242ACFDA00F9755F /* Box.m */,
 			);
@@ -130,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F662694D242ACFDA00F9755F /* Box.m in Sources */,
-				F6626945242AC2CF00F9755F /* main (1).m in Sources */,
+				F662694F242B144000F9755F /* main.m in Sources */,
 				F6626947242AC2D500F9755F /* DateCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
