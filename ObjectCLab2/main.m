@@ -14,34 +14,43 @@
 #import "Box.h"
 
 
-NSInteger *getUserInput(int maxLength, NSString *prompt) {
-  if (maxLength < 1) {
-    maxLength = 1000;
+float getUserInput(int maxLenght, NSString *prompt){
+  if (maxLenght < 1){
+    maxLenght = 255;
   }
-    NSLog(@"%@ ", prompt);
-    char inputChars[maxLength];
-    char *result = fgets(inputChars, maxLength, stdin);
-    if (result != NULL) {
-        NSString *result = [[NSString stringWithUTF8String:inputChars]stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] ;
-                            
-        return result.intValue;
-    }
-    return NULL;
+
+   
+  NSLog(@"%@", prompt);
+  char inputChars[maxLenght];
+  char *result = fgets(inputChars, maxLenght, stdin);
+  if(result != NULL){
+    NSString *theString = [[NSString stringWithUTF8String:inputChars]stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+     
+    return [theString floatValue];
+  }
+  return 0.0;
 }
-
-
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
-
-          NSInteger *widthInput =  getUserInput (0, @"\nWidth:");
-          NSInteger *heightInput = getUserInput (0, @"\nHeight:");
-          NSInteger *lengthInput = getUserInput (0, @"\nLength:");
-        
-
-
-
+      
+      
+    float height = getUserInput(255, @"\n Height:");
+    float widht = getUserInput(255, @"\n  Width:");
+    float lenght = getUserInput(255, @"\n Lenght:");
+      
+      while (YES) {
+          double volume = widht * height * lenght;
+          NSLog(@"volume");
+          
+          {break;};
+      }
+      
+    
+      
+     
+     
   }
-
+  return 0;
 }
 //    // Default initializer
 //    // - DateCalculator *calc1 = [DateCalculator new];
